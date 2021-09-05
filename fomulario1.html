@@ -11,19 +11,20 @@
         <!--Etiqueta fieldset-->
         <fieldset>
             
-            <legend>Datos personales</legend>
+            <h1>Calculador de IMC </h1>
+            <legend>Datos</legend>
 
-            <label>Nombre: </label>        
+            <label>Nombre:  </label>        
             <input name='nombre' id="nombre" type='text'/>
 
             <label>Apellido : </label>            
             <input name='Apellido' id="apellido" type='text'/><br><br>
 
-            <label>Estatura: </label>
-            <input type="number" id="estatura" name='Estatura' /><br><br>
+            <label>Estatura: Centimetros<br> </label>
+            <input type="text" id="estatura" name='Estatura' /><br><br>
 
-            <label>Peso: </label>          
-            <input name='Peso' id="Peso" type='number'/><br><br>
+            <label>Peso:Kilogramos <br></label>          
+            <input name='Peso' id="Peso" type='text'/><br><br>
 
             <label>Sexo: </label>           
             <select name="select" id="Sexo">
@@ -33,12 +34,13 @@
             </select><br><br>
 
             <label>Edad:</label>            
-            <input type='checkbox' name='edad' value='20-39' /> 20-39
+            <input type='checkbox' id="edad" name='edad' value='20-39' /> 20-39
             <input type='checkbox' name='edad' value='40-59' /> 40-59
             <input type='checkbox' name='edad' value='60-79' /> 60-79<br><br>           
+            <input type="submit" value="Enviar" />          
             
         </fieldset>  
-        <input type="submit" value="Enviar" />
+        
     </form><br><br>
 </body>
 </html>
