@@ -12,32 +12,42 @@
         <fieldset>
             
             <h1>Calculador de IMC </h1>
+            <hr color="blue" >
             <legend>Datos</legend>
-
+            <!---->
             <label>Nombre:  </label>        
             <input name='nombre' id="nombre" type='text'/>
 
             <label>Apellido : </label>            
             <input name='Apellido' id="apellido" type='text'/><br><br>
 
-            <label>Estatura: Centimetros<br> </label>
-            <input type="text" id="estatura" name='Estatura' /><br><br>
 
-            <label>Peso:Kilogramos <br></label>          
+            <label>Estatura:<br></label>
+            <label> Metros</label>
+            <input type="radio" id="Metros" name="estatura">
+            <label> Centimetros</label>
+            <input type="radio" id="Centimetros" name="estatura"><br>
+            <input type="text" id="estatura" name='Estatura' /><br><br>            
+
+            <label>Peso:<br></label>  
+            <label> Kilos</label>
+            <input type="radio" id="Kilos" name="Peso">
+            <label> Libras</label>
+            <input type="radio" id="Libras" name="Peso"><br>        
             <input name='Peso' id="Peso" type='text'/><br><br>
 
             <label>Sexo: </label>           
             <select name="select" id="Sexo">
-                <option value="value1"></option>
+                <option value="value1">Seleccione</option>
                 <option value="value1">Hombre</option> 
                 <option value="value2" >Mujer</option>
             </select><br><br>
 
-            <label>Edad:</label>            
+            <label>Seleccione su Edad:</label>            
             <input type='checkbox' id="edad" name='edad' value='20-39' /> 20-39
             <input type='checkbox' name='edad' value='40-59' /> 40-59
             <input type='checkbox' name='edad' value='60-79' /> 60-79<br><br>           
-            <input type="submit" value="Enviar" />          
+            <input type="submit" value="Calcular"/>       
             
         </fieldset>  
         
