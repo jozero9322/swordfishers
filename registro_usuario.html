@@ -5,7 +5,8 @@
     <title>nuevo proyecto</title>
 </head>
 
-<body bgcolor="#E0FFFF">
+<body>
+    <h1>Registro de Usuarios</h1>
     <form>
         <label for="nombre">Nombre : </label>
         <input type="text" id="nombre" name="nombre" />
@@ -13,28 +14,48 @@
         <label for="Apellido">Apellido : </label>
         <input type="text" id="apellido" name="apellido" /> <br><br>
 
-        <label for="edad">Edad : </label>
+        <label for="Edad">Edad : </label>
         <input type="number" id="edad" name="edad" /> <br><br>
 
-        <label>cedula: </label>
-        <input name='cedula' id="cedula" type='number' />
+        <label>Tipo documento: </label>
+        <select name="select" id="tipo_documento">
+            <option value="value1">Seleccione uno</option>
+            <option value="value3">CC</option>
+            <option value="value4">TI</option>
+            <option value="value5">RC</option>
+            <option value="value6">CE</option>
+        </select><br><br>
+
+
+        <label>Numero documento: </label>
+        <input name='cedula' id="cedula" type='number' /> <br><br>
+
+        <label for="start">Fecha de nacimiento:</label>
+        <input type="date" id="start" name="trip-start" /> <br></br>
         
+
         <label>Telefono: </label>
-        <input name="telefono" id="Telefono" type="number" <br><br>
+        <input name="telefono" id="Telefono" type="number" /><br><br>
 
-        <br>
-
+        <label>Direccion: </label>
+        <input name="telefono" id="Telefono" type="number" /> <br><br>
 
         <label>Sexo: </label>
         <select name="select" id="Sexo">
-            <option value="value1"></option>
+            <option value="value1">Seleccione uno</option>
             <option value="value1">Hombre</option>
             <option value="value2">Mujer</option>
             <option value="value3">Otro</option>
         </select><br><br>
 
-        <label for="comentario">Comentario: </label> <br>
-        <textarea cols="50" rows="5" id="comentario" name="comentario">  </textarea>
+        <label>Nombre Usuario: </label>
+        <input name="usuario" id="usuario" type="text" /> <br><br>
+
+        <label>Contraseña: </label>
+        <input name="contraseña" id="contraseña" type="text" /> <br><br>
+
+
+        <button>Registrar</button> <br>
 
     </form>
 </body>
