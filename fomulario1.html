@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="estilo.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,53 +11,91 @@
 </head>
 <body>
     <form>
+        <div class="container">
+            <div class="row">
+              <div class="col title">
+                <h1>Calculador de IMC </h1>
+              </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                  Column
+                </div>
+                <div class="col">
+                    
+                        
+                        <legend>Datos</legend>
+                        <!---->
+                        <div class="row">
+                            <div class="col">
+                              <label>Documento:  </label>
+                              <input type="text" class="form-control" placeholder="Documento" aria-label="Documento" required>
+                            </div>
+                          </div>
+                        <div class="row">
+                            <div class="col">
+                                <label>Nombre:  </label>
+                                <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre" required>
+                              </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <label>Apellido:  </label>
+                                <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido"required>
+                              </div>
+                        </div>
+                        
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                            <label class="form-check-label" for="gridRadios1">
+                              Metros
+                            </label>
+                          </div>
+                          <div class="form-check">
+                             
+                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                            <label class="form-check-label" for="gridRadios2">
+                              Centimetros
+                            
+                            <input type="text" class="form-control" placeholder="Estatura" aria-label="Estatura"required>
+                          </div>           
+            
+                        <label>Peso:<br></label>  
+                        <label> Kilos</label>
+                        <input type="radio" id="Kilos" name="Peso">
+                        <label> Libras</label>
+                        <input type="radio" id="Libras" name="Peso"><br>        
+                        <input name='Peso' id="Peso" type='text'/><br><br>
+            
+                        <label>Sexo: </label>           
+                        <select name="select" id="Sexo">
+                            <option value="value1">Seleccione</option>
+                            <option value="value1">Hombre</option> 
+                            <option value="value2" >Mujer</option>
+                            <option value="value3">Otro</option>
+                        </select><br><br>
+            
+                        <label>Seleccione su Edad:</label>            
+                        <input type='checkbox' id="edad" name='edad' value='20-39' /> 20-39
+                        <input type='checkbox' name='edad' value='40-59' /> 40-59
+                        <input type='checkbox' name='edad' value='60-79' /> 60-79<br><br>           
+                        <input type="submit" value="Calcular"/>       
+                        
+                    
+                  </div>
+                  <div class="col">
+                    Column
+                  </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  Column
+                </div>
+              </div>
+        </div>
+
         <!--Etiqueta fieldset-->
-        <fieldset>
-            
-            <h1>Calculador de IMC </h1>
-            <hr color="blue" >
-            <legend>Datos</legend>
-            <!---->
-            <label>Documento:  </label>        
-            <input name='Documento' id="Documento" type='text'/><br><br>
-            
-
-            <label>Nombre:  </label>        
-            <input name='nombre' id="nombre" type='text'/>
-
-            <label>Apellido : </label>            
-            <input name='Apellido' id="apellido" type='text'/><br><br>
-
-
-            <label>Estatura:<br></label>
-            <label> Metros</label>
-            <input type="radio" id="Metros" name="estatura">
-            <label> Centimetros</label>
-            <input type="radio" id="Centimetros" name="estatura"><br>
-            <input type="text" id="estatura" name='Estatura' /><br><br>            
-
-            <label>Peso:<br></label>  
-            <label> Kilos</label>
-            <input type="radio" id="Kilos" name="Peso">
-            <label> Libras</label>
-            <input type="radio" id="Libras" name="Peso"><br>        
-            <input name='Peso' id="Peso" type='text'/><br><br>
-
-            <label>Sexo: </label>           
-            <select name="select" id="Sexo">
-                <option value="value1">Seleccione</option>
-                <option value="value1">Hombre</option> 
-                <option value="value2" >Mujer</option>
-                <option value="value3">Otro</option>
-            </select><br><br>
-
-            <label>Seleccione su Edad:</label>            
-            <input type='checkbox' id="edad" name='edad' value='20-39' /> 20-39
-            <input type='checkbox' name='edad' value='40-59' /> 40-59
-            <input type='checkbox' name='edad' value='60-79' /> 60-79<br><br>           
-            <input type="submit" value="Calcular"/>       
-            
-        </fieldset>  
+          
         
     </form><br><br>
 </body>
