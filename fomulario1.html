@@ -9,94 +9,145 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario</title>
 </head>
-<body>
+<body class="form1">
     <form>
-        <div class="container">
-            <div class="row">
+        <div class="container-fluid">
+            <div class="row encabezado">
               <div class="col title">
-                <h1>Calculador de IMC </h1>
-              </div>
+                <nav class="navbar navbar-expand-lg navbar-light bg-light navbar navbar-dark bg-dark">
+                  <div class="container-fluid">
+                    <a class="navbar-brand" href="#"><img src="img/logo.PNG" class="img_fluid" alt=""></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                      <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="#">Formulario</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Ayuda</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Salir</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </nav>              
             </div>
             <div class="row">
                 <div class="col">
-                  Column
+                    <div>
+                      <h3 class="video">Guias alimentarias</h3>
+                      <img src="img/guia_buena_salud.PNG" alt="guia_buena_salud">
+                      <a href="https://www.youtube.com/watch?v=EqtX2fkp6tY">Video: Guia buena salud</a>
+                      <p>Fuente: youtube.com</p>
+
+                      <h3 class="video">Consejos para tener una alimentación saludable</h3>
+                      <img src="img/consejos_alimentacion_saludable.PNG" alt="consejos_alimentacion_saludable">
+                      <a href="https://www.youtube.com/watch?v=KyVk3366D_g">Videos: Consejos para alimentacion saludable</a>
+                      <p>Fuente: youtube.com</p>
+
+                    </div>
+
                 </div>
-                <div class="col">
-                    
-                        
-                        <legend>Datos</legend>
+                <div class="col Formulario">                  
+                        <h1>CALCULADOR IMC</h1>
+                        <hr>
                         <!---->
                         <div class="row">
                             <div class="col">
                               <label>Documento:  </label>
                               <input type="text" class="form-control" placeholder="Documento" aria-label="Documento" required>
                             </div>
-                          </div>
+                          </div><br>
                         <div class="row">
                             <div class="col">
                                 <label>Nombre:  </label>
                                 <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre" required>
                               </div>
-                        </div>
+                        </div><br>
                         <div class="row">
                             <div class="col">
                                 <label>Apellido:  </label>
                                 <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido"required>
                               </div>
-                        </div>
-                        
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
-                            <label class="form-check-label" for="gridRadios1">
-                              Metros
-                            </label>
-                          </div>
-                          <div class="form-check">
-                             
-                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-                            <label class="form-check-label" for="gridRadios2">
-                              Centimetros
-                            
-                            <input type="text" class="form-control" placeholder="Estatura" aria-label="Estatura"required>
-                          </div>           
-            
+                        </div><br>
+                        <label>Estatura:<br></label>  
+                        <label> Metros</label>
+                        <input type="radio" id="Metros" name="Estatura">
+                        <label> Centimetros</label>
+                        <input type="radio" id="Centimetros" name="Estatura"><br>
+                        <input type="text" class="form-control" placeholder="Estatura" aria-label="Estatura"required>        
+                        <br>
                         <label>Peso:<br></label>  
                         <label> Kilos</label>
                         <input type="radio" id="Kilos" name="Peso">
                         <label> Libras</label>
                         <input type="radio" id="Libras" name="Peso"><br>        
-                        <input name='Peso' id="Peso" type='text'/><br><br>
+                        <input type="text" class="form-control" placeholder="Peso" aria-label="Peso"required><br><br>
             
-                        <label>Sexo: </label>           
+                        <label>Sexo: </label>         
                         <select name="select" id="Sexo">
                             <option value="value1">Seleccione</option>
                             <option value="value1">Hombre</option> 
                             <option value="value2" >Mujer</option>
                             <option value="value3">Otro</option>
                         </select><br><br>
-            
-                        <label>Seleccione su Edad:</label>            
-                        <input type='checkbox' id="edad" name='edad' value='20-39' /> 20-39
-                        <input type='checkbox' name='edad' value='40-59' /> 40-59
-                        <input type='checkbox' name='edad' value='60-79' /> 60-79<br><br>           
-                        <input type="submit" value="Calcular"/>       
-                        
-                    
+                        <div class="col">
+                          <div class="form-check">
+                            <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3" aria-describedby="invalidCheck3Feedback" required>
+                            <label class="form-check-label" for="invalidCheck3">
+                              Acepta los términos y condiciones
+                            </label>
+                            <div id="invalidCheck3Feedback" class="invalid-feedback">
+                              Debes estar de acuerdo antes de enviar.
+                            </div>
+                          </div>
+                        </div>
+                        <div>                          
+                          <button class="btn btn-primary" type="submit">Calcular</button>
+                        </div>         
                   </div>
                   <div class="col">
-                    Column
+                    <p class="imc">El Indice de Masa Corporal (IMC) mide el contenido de grasa corporal en relación a la estatura y el peso que presentan tanto los hombres como las mujeres.</p><br>
+                    <ul>
+                      <li>Anote su peso y estatura usando el sistema para medir IMC (Kilos,libras),(kmetros y centímetros).</li><br>
+                      <li>Hacer click en el boton “calcular” y aparecerá su IMC en el recuadro.</li>
+                    </ul>
+                    <img src="img/imc.PNG" alt="clasificacion">
                   </div>
               </div>
-              <div class="row">
+              <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 footer">
                 <div class="col">
-                  Column
+                  <h5>Informacion</h5>
+                  <p></p>
                 </div>
-              </div>
-        </div>
-
-        <!--Etiqueta fieldset-->
-          
-        
-    </form><br><br>
+                <div class="col">
+                  <h5>Redes Sociales</h5>
+                  <img class="icon-footer" src="iconos/twitter.png">
+                  <label>Siganos en Twitter</label><br>
+                  <img class="icon-footer" src="iconos/facebook.png">
+                  <label>Siganos en Facebook</label><br>
+                  <img class="icon-footer" src="iconos/whatsapp.png">
+                  <label>Siganos en WhatsApp</label><br>
+                </div>
+                <div class="col">
+                  <h5>Contactenos</h5>
+                  <img class="icon-footer" src="iconos/telefono-inteligente.png">
+                  <label>111122333</label><br>
+                  <img class="icon-footer" src="iconos/correos-electronicos.png">
+                  <label>@gmail.com</label>
+                </div>
+                
+              </div> 
+              
+        </div>        
+    </form>    
 </body>
+  
 </html>

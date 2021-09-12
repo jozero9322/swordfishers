@@ -1,3 +1,9 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
+
 body {
     font-family: "Inconsolata", Arial, sans-serif;
     font-weight: 400;
@@ -29,9 +35,50 @@ body {
     margin: 0 0 20px 0;
   }
 
-  .title {
-    text-align: center;
-    color: rgb(3, 3, 3);
-    background-color: rgb(148, 198, 226);
+  .form1 {
+    background-image:url(img/fondo1.jpg);
   }
   
+ 
+  .title {
+    text-align:right;
+    color: rgb(3, 3, 3);
+  }
+
+  .Formulario {
+    background-color: rgb(100, 163, 165);
+  }
+
+  img {
+    width: 100%;
+    margin-top: 5px;
+  }
+
+ 
+  .imc {
+    margin-top: 30px;
+  }
+
+  .video {
+    margin-top: 25px;
+    text-align: center;
+  }
+
+  .img_fluid {
+    width: 80px;
+    height: 80px;;
+  }
+
+  .footer {
+    background-color: #000;
+    color: #fff;
+  }
+
+.icon-footer {
+  width: 30px;
+  height: 30px;
+}
+
+h5 {
+  color: #fff;
+}
