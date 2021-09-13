@@ -1,10 +1,19 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
+<<<<<<< HEAD
     <link rel="stylesheet" href="style.css">
+=======
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+>>>>>>> 6a9e2201cca224f220dbefedce1c23102c8cc859
     <title>Registro Usuario</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 </head>
+<<<<<<< HEAD
 <fieldset>
 <body>
     <h1>Registro de Usuarios</h1>
@@ -17,48 +26,78 @@
 
         <label for="Edad">Edad : </label>
         <input type="number" id="edad" name="edad" /> <br><br>
+=======
+<body class="regis-usuario">
+>>>>>>> 6a9e2201cca224f220dbefedce1c23102c8cc859
 
-        <label>Tipo documento: </label>
-        <select name="select" id="tipo_documento">
-            <option value="value1">Seleccione uno</option>
-            <option value="value3">CC</option>
-            <option value="value4">TI</option>
-            <option value="value5">RC</option>
-            <option value="value6">CE</option>
-        </select><br><br>
-
-
-        <label>Numero documento: </label>
-        <input name='cedula' id="cedula" type="text" /> <br><br>
-
-        <label for="start">Fecha de nacimiento:</label>
-        <input type="date" id="start" name="trip-start" /> <br></br>
+    <h1>Registro Usuario</h1>
+    <hr>
+    <form class="row g-3 form-usuario">
+        <div class="col-md-4">
+            <label for="inputZip" class="form-label">Nombres</label>
+            <input type="text" class="form-control" id="inputZip">
+        </div>
+        <div class="col-md-4">
+            <label for="inputZip" class="form-label">Apellidos</label>
+            <input type="text" class="form-control" id="inputZip">
+          </div>
+          <div class="col-md-2">
+            <label for="inputZip" class="form-label">Edad</label>
+            <input type="text" class="form-control" id="inputZip">
+          </div>
+          <div class="col-md-2">
+            <label for="inputZip" class="form-label">Fecha Nacimiento</label>
+            <input type="date" class="form-control" id="inputZip">
+          </div>
+        <div class="col-md-6">
+          <label for="inputEmail4" class="form-label">Email</label>
+          <input type="email" class="form-control" id="inputEmail4">
+        </div>
+        <div class="col-md-6">
+          <label for="inputPassword4" class="form-label">Password</label>
+          <input type="password" class="form-control" id="inputPassword4">
+        </div>
+        <div class="col-8">
+          <label for="inputAddress" class="form-label">Direccion</label>
+          <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+        </div>
+        <div class="col-md-2">
+            <label for="inputZip" class="form-label">Telefono</label>
+            <input type="tel" class="form-control" id="inputZip">
+          </div>
         
-
-        <label>Telefono: </label>
-        <input name="telefono" id="Telefono" type="text" /><br><br>
-
-        <label>Direccion: </label>
-        <input name="telefono" id="Telefono" type="text" /> <br><br>
-
-        <label>Sexo: </label>
-        <select name="select" id="Sexo">
-            <option value="value1">Seleccione uno</option>
-            <option value="value1">Hombre</option>
-            <option value="value2">Mujer</option>
-            <option value="value3">Otro</option>
-        </select><br><br>
-
-        <label>Nombre Usuario: </label>
-        <input name="usuario" id="usuario" type="text" /> <br><br>
-
-        <label>Contraseña: </label>
-        <input name="contraseña" id="contraseña" type="text" /> <br><br>
-
-
-        <button>Registrar</button> <br>
-
-    </form>
+        <div class="col-md-6">
+          <label for="inputCity" class="form-label">Ciudad:</label>
+          <input type="text" class="form-control" id="inputCity">
+        </div>
+        <div class="col-md-4">
+          <label for="inputState" class="form-label">Tipo Documento</label>
+          <select class="form-select" id="validationCustom04" required>
+            <option selected disabled value="">Seleccione Uno</option>
+            <option value="1">Registro Civil</option>
+            <option value="2">Tarjeta Identidad</option>
+            <option value="3">NIUP</option>
+            <option value="4">Cedula</option>
+            <option value="5">cedula Extrangeria</option>
+            <option value="6">Pasaporte</option>
+          </select>
+        </div>
+        <div class="col-md-2">
+          <label for="inputZip" class="form-label">Documento</label>
+          <input type="text" class="form-control" id="inputZip">
+        </div>
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+              Check me out
+            </label>
+          </div>
+        </div>
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary">Sign in</button>
+        </div>
+      </form>
 </body>
-</fieldset>
 </html>
+
