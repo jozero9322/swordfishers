@@ -52,11 +52,17 @@ h5 {
   color: #fff;
 }
 
+.form-usuario {
+  background: rgb(127, 122, 226);
+  border: 3px solid rgb(80, 240, 226);
+  border-radius: 15px;
+}
 .regis-usuario {
   margin: 80px;
-  padding: 6px;
-  border: 0px;
-  border: 2px solid rgb(122, 219, 223);
-  border-radius: 15px;  
+  padding: 9px;
+  border: 0px;  
+  border-radius: 15px;
 }
+
+
 
