@@ -4,37 +4,6 @@
   border: 0px;
 }
 
-body {
-    font-family: "Inconsolata", Arial, sans-serif;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.7;
-    color: #333333;
-    background: #fff;
-  }
-  a {
-    color: #DD356E;
-    -webkit-transition: 0.5s;
-    -o-transition: 0.5s;
-    transition: 0.5s;
-  }
-  a:hover, a:active, a:focus {
-    color: #DD356E;
-    outline: none;
-    text-decoration: none;
-  }
-  
-  p {
-    margin-bottom: 30px;
-  }
-  
-  h1, h2, h3, h4, h5, h6, figure {
-    color: #000;
-    font-family: "Inconsolata", Arial, sans-serif;
-    font-weight: 400;
-    margin: 0 0 20px 0;
-  }
-
   .form1 {
     background-image:url(img/fondo1.jpg);
   }
@@ -82,3 +51,12 @@ body {
 h5 {
   color: #fff;
 }
+
+.regis-usuario {
+  margin: 80px;
+  padding: 6px;
+  border: 0px;
+  border: 2px solid rgb(122, 219, 223);
+  border-radius: 15px;  
+}
+
